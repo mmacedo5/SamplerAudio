@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <title>Sampler d'audio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="teclat">
+        <div id="titolControls" class="titol">
+            <h1>CONTROLS</h1>
+        </div>
+        <div id="titolSounds" class="titol">
+            <h1>SOUNDS</h1>
+        </div>
+        <div id="controls">
+            <div class="volum" id="audioVolume">
+                <div class="titolVolume">
+                    <h1>AUDIO<br>VOLUME</h1>
+                </div>
+                <div class="indicador" id="indicador0"></div>
+                <div class="botoAuto" id="auto0"></div>
+                <div class="auto" >AUTO</div>
+                <div class="marcadorVolum">
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="regulador" id="reguladorAudio">
+                        <input type="range" orient="vertical" min="0" max="1" step="0.00001" value="1" class="slider" id="volumAudio">
+                    </div>
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volum" id="volume1">
+                <div class="titolVolume">
+                    <h1>VOLUME<br>1</h1>
+                </div>
+                <div class="indicador" id="indicador1"></div>
+                <div class="botoAuto" id="auto1"></div>
+                <div class="auto">AUTO</div>
+                <div class="marcadorVolum">
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="regulador" id="reguladorV1"><input type="range" orient="vertical" min="0" max="1" step="0.00001" value="0.5" class="slider" id="volum1"></div>
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volum" id="volume2">
+                <div class="titolVolume">
+                    <h1>VOLUME<br>2</h1>
+                </div>
+                <div class="indicador" id="indicador2"></div>
+                <div class="botoAuto" id="auto2"></div>
+                <div class="auto">AUTO</div>
+                <div class="marcadorVolum">
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="regulador" id="reguladorV2"><input type="range" orient="vertical" min="0" max="1" step="0.00001" value="0.5" class="slider" id="volum2"></div>
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volum" id="volume3">
+                <div class="titolVolume">
+                    <h1>VOLUME<br>3</h1>
+                </div>
+                <div class="indicador" id="indicador3"></div>
+                <div class="botoAuto" id="auto3"></div>
+                <div class="auto">AUTO</div>
+                <div class="marcadorVolum">
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="regulador" id="reguladorV3"><input type="range" orient="vertical" min="0" max="1" step="0.00001" value="0.5" class="slider" id="volum3"></div>
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="volum" id="volume4">
+                <div class="titolVolume">
+                    <h1>VOLUME<br>4</h1>
+                </div>
+                <div class="indicador" id="indicador4"></div>
+                <div class="botoAuto" id="auto4"></div>
+                <div class="auto">AUTO</div>
+                <div class="marcadorVolum">
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    <div class="regulador" id="reguladorV4"><input type="range" orient="vertical" min="0" max="1" step="0.00001" value="0.5" class="slider" id="volum4"></div>
+                    <div class="nivell">
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sounds">
+            <div class="teclat">
+                <div class="grid">
+                    <div class="a" id="a1">
+                        <img class="botoEfectes" src="img/a1.png">
+                        <audio nocontrols id="audioA1">
+                            <source src="so/a1.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="b" id="b1">
+                        <img class="botoEfectes" src="img/b1.png">
+                        <audio nocontrols id="audioB1">
+                            <source src="so/b1.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="c" id="c1">
+                        <img class="botoEfectes" src="img/c1.png">
+                        <audio nocontrols id="audioC1">
+                            <source src="so/c1.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="d" id="d1">
+                        <img class="botoEfectes" src="img/d1.png">
+                        <audio nocontrols id="audioD1">
+                            <source src="so/d1.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="e" id="a2">
+                        <img class="botoEfectes" src="img/a2.png">
+                        <audio nocontrols id="audioA2">
+                            <source src="so/a2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="f" id="b2">
+                        <img class="botoEfectes" src="img/b2.png">
+                        <audio nocontrols id="audioB2">
+                            <source src="so/b2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="g" id="c2">
+                        <img class="botoEfectes" src="img/c2.png">
+                        <audio nocontrols id="audioC2">
+                            <source src="so/c2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="h" id="d2">
+                        <img class="botoEfectes" src="img/d2.png">
+                        <audio nocontrols id="audioD2">
+                            <source src="so/d2.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="i" id="a3">
+                        <img class="botoEfectes" src="img/a3.png">
+                        <audio nocontrols id="audioA3">
+                            <source src="so/a3.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="j" id="b3">
+                        <img class="botoEfectes" src="img/b3.png">
+                        <audio nocontrols id="audioB3">
+                            <source src="so/b3.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="k" id="c3">
+                        <img class="botoEfectes" src="img/c3.png">
+                        <audio nocontrols id="audioC3">
+                            <source src="so/c3.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="l" id="d3">
+                        <img class="botoEfectes" src="img/d3.png">
+                        <audio nocontrols id="audioD3">
+                            <source src="so/d3.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="m" id="a4">
+                        <img class="botoEfectes" src="img/a4.png">
+                        <audio nocontrols id="audioA4">
+                            <source src="so/a4.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="n" id="b4">
+                        <img class="botoEfectes" src="img/b4.png">
+                        <audio nocontrols id="audioB4">
+                            <source src="so/b4.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="o" id="c4">
+                        <img class="botoEfectes" src="img/c4.png">
+                        <audio nocontrols id="audioC4">
+                            <source src="so/c4.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="p" id="d4">
+                        <img class="botoEfectes" src="img/d4.png">
+                        <audio nocontrols id="audioD4">
+                            <source src="so/d4.wav" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="superior">
+        <div id="titolAudio" class="titol">
+            <h1>AUDIO DISPLAY</h1>
+        </div>
+        <div class="pantall pantalla2" id="pantalla">
+            <!--
+            <video nocontrols id="musica">
+                <source src="video/way1.mp4" type="video/mp4">
+            </video>
+-->
+            <img class="formaPantalla" src="img/pantalla.png">
+        </div>
+        <div id="audioDisplay">
+            <div class="way" id="way1">
+                <div class="indicador" id="indicadorWay1"></div>
+                <div class="botoWay" id="botoway1"></div>
+                <div class="textWay">WAY 1</div>
+            </div>
+            <div class="way">
+                <div class="indicador" id="indicadorWay2"></div>
+                <div class="botoWay" id="botoway2"></div>
+                <div class="textWay">WAY 2</div>
+            </div>
+            <div class="way" id="way3">
+                <div class="indicador" id="indicadorWay3"></div>
+                <div class="botoWay" id="botoway3"></div>
+                <div class="textWay">WAY 3</div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="js/script.js"></script>
+
+</html>
